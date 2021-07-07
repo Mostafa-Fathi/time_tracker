@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "96532360246",
+    "project_id": "time-tracker-75929",
+    "storage_bucket": "time-tracker-75929.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96532360246:android:ab719a70cec9ad3e9d7c97",
+        "android_client_info": {
+          "package_name": "com.mostafa.time_tracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "96532360246-k9dk1gi3of0aub2cu9ikrdctklmaargs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mostafa.time_tracker",
+            "certificate_hash": "3c09352cc17deaca311802012de08e20a65ca3f1"
+          }
+        },
+        {
+          "client_id": "96532360246-toqmg892u6upudas4purdhel5d9dq4e4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9tUAdofgFjLcc139m8b54XTw1ZIdP2SY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "96532360246-toqmg892u6upudas4purdhel5d9dq4e4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
