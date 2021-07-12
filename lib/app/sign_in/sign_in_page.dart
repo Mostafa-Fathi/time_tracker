@@ -1,17 +1,20 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:time_tracker/app/sgin_in/social_button.dart';
+import 'package:time_tracker/app/sign_in/social_button.dart';
+import 'package:time_tracker/services/auth.dart';
 
-class SginInPage extends StatelessWidget {
-  final void Function(User) onSginIn;
+class SignInPage extends StatelessWidget {
+  final void Function(User) onSignIn;
+  final AuthBass auth;
 
-  const SginInPage({@required this.onSginIn});
+  const SignInPage({@required this.onSignIn,@required this.auth});
 
-  Future<void> _sginInAnonymously() async {
+  Future<void> _signInAnonymously() async {
     try {
-      final userCredential = await FirebaseAuth.instance.signInAnonymously();
-      onSginIn(userCredential.user);
+      final user= await auth.signInAnonymously();
+
+      onSignIn(user);
 
     } catch (e) {
       print(e.toString());
@@ -102,7 +105,7 @@ class SginInPage extends StatelessWidget {
             textColor: Colors.black,
             assetName: 'images/mask.png',
             color: Colors.lime[700],
-            onPressed: _sginInAnonymously,
+            onPressed: _signInAnonymously,
           ),
         ],
       ),
